@@ -57,6 +57,7 @@ GRANT 'seller' TO 'mario.Banda'@'%';
 /* SUPER ADMIN & ADMIN */
 GRANT ALL PRIVILEGES ON db_test.* TO 'super_admin';
 GRANT ALL PRIVILEGES ON db_test.* TO 'admin';
+GRANT CREATE ,SELECT, UPDATE, INSERT ON db_test_7b.tbd_products_categories TO 'support';
 
 /* SELLER */
 GRANT SELECT, INSERT, UPDATE, DELETE ON db_test.* TO 'seller';
@@ -82,6 +83,7 @@ SET DEFAULT ROLE 'seller' TO 'aaron.carballo'@'%';
 SET DEFAULT ROLE 'seller' TO 'mario.Banda'@'%';
 SET DEFAULT ROLE 'seller' TO 'Rene.David'@'%';
 SET DEFAULT ROLE 'seller' TO 'Rene'@'192.168.1.118';
+
 -- SE ELIMINÓ: SET DEFAULT ROLE 'super_admin' TO 'root'@'localhost';
 /* ============================================================
    7. APLICAR LOS CAMBIOS
